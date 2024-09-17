@@ -739,7 +739,17 @@
            <img src="img/telegram.png" alt="Facebook">
        </a>
    </div>
-
+ <script>
+    document.addEventListener('contextmenu',(e)=>{
+    e.preventDefault();
+    return false;    
+    })
+    document.addEventListener('keydown',(e)=>{
+    if(e.ctrlKey || e.keyCode == 123)
+    e.stopPropagation()
+    e.preventDefault()  
+})
+    </script>
         <div class="container-fluid px-4">
             <p class="m-0 text-center text-white"> Zero One Team  &copy; جميع الحقوق محفوظة</p>
             <p class="m-0 text-center text-white"><a href="https://www.linkedin.com/in/rami-ibrahim-77a395253/" target="_blank" style="color: white;">Rami Ibrahim</a> تم التطوير من قبل </p>
