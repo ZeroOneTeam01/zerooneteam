@@ -219,3 +219,19 @@ section {
   .course select {
     width: 45%;
   }
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content horizontally */
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Adds spacing between icons */
+    margin-top: 10px;
+}
+
+h2 {
+    margin-bottom: 20px; /* Adjusts the spacing between the title and social icons */
+}
