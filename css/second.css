@@ -1,0 +1,638 @@
+@import url(https://fonts.googleapis.com/earlyaccess/lateef.css);
+/* font-family: 'Lateef', serif; */
+
+#navbarResponsive {
+    font-family: 'Lateef', serif;
+    font-size: 20px;
+    /* Adjust this value as per your preference */
+}
+
+.navbar-nav .nav-link {
+    font-size: 28px;
+    /* You can apply the same or a different font size to the links */
+}
+
+body {
+    margin: 0px;
+}
+
+/* Default size (for larger screens) */
+.logo {
+    width: 80px;
+    height: 80px;
+    margin-right: 8px;
+}
+
+/* For smaller screens (mobile) */
+@media (max-width: 768px) {
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* For extra small screens */
+@media (max-width: 576px) {
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+.navbartitle {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: larger;
+}
+
+.HeaderSec {
+    background: #01294D;
+    color: #03AEC6;
+}
+
+.HeaderSec {
+    font-family: 'Lateef', serif;
+    /* Apply the font family */
+    text-align: center;
+    /* Center the text */
+    padding: 180px 0;
+    /* Add vertical padding */
+}
+
+.HeaderSec h1 {
+    font-size: 50px;
+    /* Default size for larger screens */
+    margin-bottom: 20px;
+    /* Space below the heading */
+}
+
+.HeaderSec p {
+    font-size: 25px;
+    /* Default size for larger screens */
+    margin-bottom: 20px;
+    /* Space below the paragraph */
+}
+
+/* Tablets and smaller screens */
+@media (max-width: 992px) {
+    .HeaderSec h1 {
+        font-size: 40px;
+        /* Adjust size for tablets */
+    }
+
+    .HeaderSec p {
+        font-size: 20px;
+        /* Adjust size for tablets */
+    }
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+    .HeaderSec h1 {
+        font-size: 28px;
+        /* Adjust size for mobile screens */
+    }
+
+    .HeaderSec p {
+        font-size: 16px;
+        /* Adjust size for mobile screens */
+    }
+}
+
+/* Small mobile screens */
+@media (max-width: 576px) {
+    .HeaderSec h1 {
+        font-size: 24px;
+        /* Further adjust size for small mobile screens */
+    }
+
+    .HeaderSec p {
+        font-size: 14px;
+        /* Further adjust size for small mobile screens */
+    }
+}
+
+.sec2 {
+    background-color: #03AEC6;
+}
+
+.sec2 .row {
+    flex-wrap: nowrap;
+    /* Prevent wrapping to new lines */
+}
+
+.sec2 img {
+    max-width: 100%;
+    /* Ensure image scales with its container */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.sec2 .col-md-6 {
+    flex: 1;
+    /* Ensure columns take equal width */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+
+    .sec2 .col-md-6 {
+        flex: 1;
+        /* Remove equal width to make column responsive */
+    }
+}
+
+/* This for the Service Boxes styles */
+.servicebox {
+    background-color: #01294D;
+    border: 2px solid #5c7d8e;
+    border-radius: 15px;
+    color: #FDFDFD;
+    text-align: right;
+    font-size: 10px;
+    padding: 20px;
+    margin: 10px
+}
+
+
+.footerSec {
+    background: #01294D;
+    color: #03AEC6;
+}
+
+.servicebox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #01294D;
+    /* Optional: background color for clarity */
+    padding: 20px;
+    border: 3px solid #333;
+    /* Optional: border for clarity */
+    border-radius: 8px;
+    /* Optional: rounded corners */
+    min-height: 350px;
+    /* Adjust as needed */
+}
+
+.servicebox img {
+    height: 68px;
+    /* Ensure all images are the same height */
+    width: auto;
+    /* Maintain aspect ratio */
+}
+
+.btn-outline-info {
+    margin-top: 10px;
+    /* Space between the button and content */
+}
+
+html {
+    scroll-padding-top: 3.5rem;
+}
+
+header {
+    padding-top: 9.5rem;
+    padding-bottom: 6rem;
+}
+
+section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+@import url('https://fonts.cdnfonts.com/css/reklame-script');
+
+/* Default padding for desktop */
+.sec2 {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    /* You can adjust this as needed */
+    font-size: 30px;
+}
+
+.sec2 .btn {
+    font-size: 22px;
+    padding: 6px 3px;
+    width: 130px;
+    /* Make buttons full width */
+    background-color: #01294D;
+    color: #FDFDFD;
+}
+
+/* Reduce padding for mobile */
+@media (max-width: 767px) {
+    .sec2 {
+        padding: 60px 0;
+        /* Reduce padding for smaller screens */
+        font-size: 20px;
+    }
+
+    .sec2 .btn {
+        font-size: 16px;
+        padding: 4px 8px;
+        width: 100px;
+        /* Make buttons full width */
+        margin-bottom: 15px;
+        /* Add spacing between buttons */
+        background-color: #01294D;
+        color: #FDFDFD;
+    }
+
+    /* Additional mobile adjustments */
+    .sec2 .container {
+        padding-left: 10px;
+        padding-right: 10px;
+        /* Reduce side padding inside the container */
+    }
+
+    .sec2 h2 {
+        margin-bottom: 5px;
+        /* Adjust margin for better spacing on mobile */
+    }
+
+    .sec2 p {
+        margin-bottom: 15px;
+        /* Adjust paragraph margin */
+    }
+}
+
+.result-card {
+    margin-top: 20px;
+}
+
+/* Base styles (applies to all screen sizes) */
+.course {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.course select {
+    width: 100%;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 600px) {
+    .course {
+        width: 100%;
+    }
+
+    .course select {
+        width: 100%; /* Ensure select element takes full width */
+        margin-bottom: 10px; /* Add space between stacked items */
+    }
+}
+
+
+/* Ensure the image is responsive */
+.section-image {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+@media (max-width: 767px) {
+    .sec2 img {
+        margin: 0px;
+        padding: 0px;
+    }
+}
+
+.size-of-text {
+    font-size: 25px;
+    /* Default size */
+}
+
+/* Adjust font size for smaller screens */
+@media (max-width: 768px) {
+    .size-of-text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .size-of-text {
+        font-size: 16px;
+    }
+}
+
+.sec4 {
+    background-color: #FDFDFD;
+}
+
+.semesterGPAResultBox {
+    background-color: #01294D;
+    /* Light blue background */
+    border: 2px solid #007bff;
+    /* Blue border */
+    border-radius: 10px;
+    /* Rounded corners */
+    padding: 12px 8px;
+    /* Spacing inside the box */
+    margin: 0px auto 20px;
+    /* Space below the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    width: 100%;
+    align-items: center;
+}
+
+.semesterGPAResultBox p,
+.semesterGPAResultBox span {
+    margin: auto;
+    /* Remove default margins */
+    padding: 5px 0;
+    /* Add padding for space between elements */
+    font-size: 1.1rem;
+    /* Adjust font size for better readability */
+    color: #FDFDFD;
+    /* Text color */
+}
+
+.semesterGPAResultBox .h4 {
+    color: #007bff;
+    /* Make the GPA and Rating stand out with blue color */
+}
+
+.semesterGPAResultBox p {
+    font-weight: bold;
+    /* Make labels bold */
+}
+
+.cumulativeGPAResultBox {
+    background-color: #01294D;
+    /* Light blue background */
+    border: 2px solid #007bff;
+    /* Blue border */
+    border-radius: 10px;
+    /* Rounded corners */
+    padding: 12px 8px;
+    /* Spacing inside the box */
+    margin: 0px auto 20px;
+    /* Space below the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    width: 100%;
+    align-items: center;
+}
+
+.cumulativeGPAResultBox p,
+.cumulativeGPAResultBox span {
+    margin: auto;
+    /* Remove default margins */
+    padding: 5px 0;
+    /* Add padding for space between elements */
+    font-size: 1.1rem;
+    /* Adjust font size for better readability */
+    color: #FDFDFD;
+    /* Text color */
+}
+
+.cumulativeGPAResultBox .h4 {
+    color: #28a745;
+    /* Green text color to match the border */
+}
+
+.cumulativeGPAResultBox p {
+    font-weight: bold;
+    /* Make labels bold */
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* المسافة بين الأيقونات */
+    padding: 20px;
+}
+
+/*التواصل الإجتماعي أيقونات*/
+.social-links a {
+    display: inline-block;
+    background-color: white;
+    border-radius: 50%;
+    padding: 1px;
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: scale(1.1);
+    /* تأثير التكبير عند التمرير */
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+}
+.carousel-inner {
+    width: 90%; 
+    margin: 0 auto; /* Centers the carousel */
+    text-align: center; /* Centers carousel content */
+}
+
+.carousel-inner img {
+    width: 100%; /* Makes images responsive */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Ensures images cover the carousel area without distortion */
+}
+.sectionFooter {
+    padding-bottom: 0px;
+}
+/* General button styling */
+#Joinbtn {
+    background-color: #01294D;
+    /* Green background */
+    color: #03AEC6;
+
+    text-decoration: none;
+    /* White text */
+    border: none;
+    /* Remove border */
+    padding: 25px 50px;
+    /* Padding for a comfortable size */
+    text-align: center;
+    /* Center text */
+    font-size: 18px;
+    /* Adjust text size */
+    font-weight: bold;
+    /* Make text bold */
+    border-radius: 8px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transitions */
+}
+
+/* Hover effects */
+#Joinbtn:hover {
+    background-color: #03AEC6;
+    /* Slightly darker green on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color:#01294D
+    /* Add shadow on hover */
+}
+
+/* Focus effects for accessibility */
+#Joinbtn:focus {
+    outline: none;
+    /* Remove default outline */
+    box-shadow: 0 0 8px 2px #03AEC6;
+    /* Green glowing outline */
+}
+
+/* Disabled state styling */
+#Joinbtn:disabled {
+    background-color: #ccc;
+    /* Grey background */
+    cursor: not-allowed;
+    /* Show not-allowed cursor */
+    color: #666;
+    /* Change text color */
+}
+
+/* Responsive scaling for smaller screens */
+@media (max-width: 600px) {
+    #Joinbtn {
+        font-size: 14px;
+        /* Slightly smaller text for small screens */
+        padding: 12px 25px;
+        /* Adjust padding */
+    }
+}
+.CalculatDiv {
+    width: 60%;
+}
+/* Adjust font sizes for better readability on smaller screens */
+h2, p {
+    font-size: 18px; /* Adjust as needed */
+}
+
+/* Ensure input fields and buttons are suitable for touchscreens */
+input, button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Adjust font sizes for better readability on smaller screens */
+h2, p {
+    font-size: 18px; /* Adjust as needed */
+}
+
+/* Ensure input fields and buttons are suitable for touchscreens */
+input, button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Adjust spacing and margins for better layout on smaller screens */
+.container {
+    max-width: 90%; /* Adjust as needed */
+}
+
+@media screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch; /* Ensure all items have the same height */
+    }
+
+    .col-md-6 {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    /* Combine button and paragraph into a single line */
+    .course {
+        display: flex; /* Ensure elements within .course are displayed as a flex container */
+        flex-direction: row;
+        justify-content: space-between; /* Ensure items are spaced out */
+        align-items: center; /* Vertically align the items */
+    }
+
+    /* Ensure the button and text in the last .col-3 are properly aligned */
+    .course .col-3:last-child {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 0; /* Remove unnecessary margin */
+    }
+
+    /* Adjust button spacing */
+    .btn .col-3 {
+        margin-bottom: 3px;
+    }
+
+    /* Ensure all items in the row have the same width and height */
+    .row > .col {
+        flex: 1; /* Make sure each item in the row has the same width */
+        max-width: 100%; /* Ensure no overflow */
+    }
+
+    /* Make sure all items have equal height */
+    .row > .col {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Space the content vertically */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    /* Adjust styles for smaller screens */
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch; /* Ensure all items have the same height */
+    }
+
+    .col-md-6 {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    /* Combine button and paragraph into a single line */
+    .course {
+        display: flex; /* Ensure elements within .course are displayed as a flex container */
+        flex-direction: row;
+        justify-content: space-between; /* Ensure items are spaced out */
+        align-items: center; /* Vertically align the items */
+    }
+
+
+    /* Ensure the button and text in the last .col-3 are properly aligned */
+    .course .col-3:last-child {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 0; /* Remove unnecessary margin */
+    }
+
+    /* Adjust button spacing */
+    .btn .col-3  {
+        margin-bottom: 3px;
+        margin-top: 0px;
+    }
+
+    /* Ensure all items in the row have the same width and height */
+    .row > .col {
+        flex: 1; /* Make sure each item in the row has the same width */
+        max-width: 100%; /* Ensure no overflow */
+    }
+
+    /* Make sure all items have equal height */
+    .row > .col {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Space the content vertically */
+    }
+    select {
+        margin-top: 8px;
+        margin-left: 1px;
+        margin-right: 1px;
+        padding: 0px 2px 0px;
+    }
+}
