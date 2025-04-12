@@ -649,12 +649,12 @@ input, button {
   }
   
   .main-logo {
-    height: 100px; /* Adjust based on your original logo */
+    height: 80px; /* Adjust based on your original logo */
     width: auto;
   }
   
   .ten-year-logo {
-    height: 100px; /* Adjust to match the main logo's visual size */
+    height: 80px; /* Adjust to match the main logo's visual size */
     width: auto;
   }
   
