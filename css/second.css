@@ -52,7 +52,7 @@ body {
 
 .HeaderSec {
     background: #01294D;
-    color: #03AEC6;
+    color: #006e8f;
 }
 
 .HeaderSec {
@@ -118,7 +118,7 @@ body {
 }
 
 .sec2 {
-    background-color: #03AEC6;
+    background-color: #006e8f;
 }
 
 .sec2 .row {
@@ -162,7 +162,7 @@ body {
 
 .footerSec {
     background: #01294D;
-    color: #03AEC6;
+    color: #006e8f;
 }
 
 .servicebox {
@@ -452,7 +452,7 @@ section {
 #Joinbtn {
     background-color: #01294D;
     /* Green background */
-    color: #03AEC6;
+    color: #006e8f;
 
     text-decoration: none;
     /* White text */
@@ -476,7 +476,7 @@ section {
 
 /* Hover effects */
 #Joinbtn:hover {
-    background-color: #03AEC6;
+    background-color: #006e8f;
     /* Slightly darker green on hover */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color:#01294D
@@ -487,7 +487,7 @@ section {
 #Joinbtn:focus {
     outline: none;
     /* Remove default outline */
-    box-shadow: 0 0 8px 2px #03AEC6;
+    box-shadow: 0 0 8px 2px #006e8f;
     /* Green glowing outline */
 }
 
@@ -641,3 +641,20 @@ input, button {
         padding: 0px 2px 0px;
     }
 }
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between logos */
+    padding: 10px;
+  }
+  
+  .main-logo {
+    height: 100px; /* Adjust based on your original logo */
+    width: auto;
+  }
+  
+  .ten-year-logo {
+    height: 100px; /* Adjust to match the main logo's visual size */
+    width: auto;
+  }
+  
