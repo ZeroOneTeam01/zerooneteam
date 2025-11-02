@@ -252,7 +252,7 @@ observer.observe(document.getElementById("Statics"));
   // Initialize the carousel and set the interval for auto sliding
   var myCarousel = document.querySelector('#carouselExampleIndicators');
   var carousel = new bootstrap.Carousel(myCarousel, {
-    interval: 4000,  // Slide every 4 seconds (4000 ms)
+    interval: 3000,  // Slide every 4 seconds (4000 ms)
     ride: 'carousel' // Auto start the carousel
   });
   document.addEventListener('keydown', function(e) {
