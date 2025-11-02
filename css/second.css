@@ -657,4 +657,14 @@ input, button {
     height: 80px; /* Adjust to match the main logo's visual size */
     width: auto;
   }
-  
+  #carouselExampleIndicators {
+  max-width: 1200px; /* Adjust this number for smaller/larger carousel */
+  margin: 0 auto;   /* Centers the carousel */
+}
+
+#carouselExampleIndicators img {
+  border-radius: 20px;
+  height: auto;
+}
+
+
