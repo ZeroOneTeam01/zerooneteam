@@ -264,22 +264,22 @@
                         <area target="_blank" alt="E.ISSUES" title="E.ISSUES" href="https://drive.google.com/drive/folders/10a2mgPdEUA8K6t7izdvD4SjK-B9ADW2I?usp=drive_link" coords="3518,2024,101" shape="circle">
                     </map>
                 </div>
-                <script>
-                    // استدعِ المحول بعد تحميل الصفحة
-                    window.addEventListener('load', function () {
-                        if (typeof imageMapResize === 'function') {
-                        imageMapResize(); // يضبط كل الخرائط في الصفحة تلقائياً
-                        }
-                    });
+                          <script>
+document.addEventListener("DOMContentLoaded", function () {
+  try {
+    const carouselEl = document.getElementById('carouselExampleIndicators');
+    if (carouselEl) {
+      carouselEl.addEventListener('slid.bs.carousel', function (e) {
+        if (typeof imageMapResize === 'function') imageMapResize();
+      });
+    }
+  } catch (err) {
+    console.error("carousel listener error:", err);
+  }
 
-                    // إذا أردت: بعد كل انتقال في الكاروسيل أعد الضبط (سابقاً ليست ضرورية لكن آمنة)
-                    const carousel = document.getElementById('carouselExampleIndicators');
-                    if (carousel) {
-                        carousel.addEventListener('slid.bs.carousel', function () {
-                        if (typeof imageMapResize === 'function') imageMapResize();
-                        });
-                    }
-                </script>
+  // بقية كودك هنا...
+});
+</script>
                <div class="carousel-item">
                     <img src="img/CIS.png" class="d-block w-100" usemap="#map-cis" style="max-width:100%; height:auto; border-radius: 20px;" alt="Clickable Image">
                     <map name="map-cis">
