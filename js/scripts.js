@@ -115,80 +115,82 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // Event listener for adding a new course
-    document.getElementById("addCourse").addEventListener("click", function () {
-        let newCourse = document.createElement("div");
-        newCourse.className = "course row align-items-center";
-        newCourse.innerHTML = `
-                        
-            <div class="col-3 mb-3">
-                <select name="hours" class="form-select hours">
-<option value="" selected >----</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option selected value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                </select>
-            </div>
-            <div class="col-3 mb-3">
-                <select name="grade" class="form-select grade">
-                    <option value="" selected>----</option>
-                    <option value="4">A+</option>
-                    <option value="3.75">A</option>
-                    <option value="3.5">A-</option>
-                    <option value="3.25">B+</option>
-                    <option value="3">B</option>
-                    <option value="2.75">B-</option>
-                    <option value="2.5">C+</option>
-                    <option value="2.25">C</option>
-                    <option value="2">C-</option>
-                    <option value="1.75">D+</option>
-                    <option value="1.5">D</option>
-                    <option value="0.75">F</option>
-                </select>
-            </div>
-            <div class="col-3 mb-3">
-                <select name="previousGrade" class="form-select previousGrade">
-                    <option value="" selected>----</option>
-                    <option value="2">C-</option>
-                    <option value="1.75">D+</option>
-                    <option value="1.5">D</option>
-                    <option value="0.75">F</option>
-                </select>
-            </div>
-            <div style="padding: 0rem;" class="col-3 mb-3">
-                <button class="btn btn-danger deleteCourse w-99">حذف</button>
-            </div>
-        `;
-        courses.appendChild(newCourse);
+    
+  // تأمين وجود العناصر قبل إضافة المستمعين
+  if (addCourse) {
+    addCourse.addEventListener("click", function () {
+      const newCourse = document.createElement("div");
+      newCourse.className = "course row align-items-center";
+      newCourse.innerHTML = `
+        <div class="col-3 mb-3">
+          <select name="hours" class="form-select hours">
+            <option value="" selected>----</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3" selected>3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </select>
+        </div>
+        <div class="col-3 mb-3">
+          <select name="grade" class="form-select grade">
+            <option value="" selected>----</option>
+            <option value="4">A+</option>
+            <option value="3.75">A</option>
+            <option value="3.5">A-</option>
+            <option value="3.25">B+</option>
+            <option value="3">B</option>
+            <option value="2.75">B-</option>
+            <option value="2.5">C+</option>
+            <option value="2.25">C</option>
+            <option value="2">C-</option>
+            <option value="1.75">D+</option>
+            <option value="1.5">D</option>
+            <option value="0.75">F</option>
+          </select>
+        </div>
+        <div class="col-3 mb-3">
+          <select name="previousGrade" class="form-select previousGrade">
+            <option value="" selected>----</option>
+            <option value="2">C-</option>
+            <option value="1.75">D+</option>
+            <option value="1.5">D</option>
+            <option value="0.75">F</option>
+          </select>
+        </div>
+        <div style="padding: 0rem;" class="col-3 mb-3">
+          <button type="button" class="btn btn-danger deleteCourse w-100">حذف</button>
+        </div>
+      `;
+      if (!courses) {
+        console.warn("Container with id='courses' not found.");
+        return;
+      }
+      courses.appendChild(newCourse);
     });
+  }
 
-    // Event listener for deleting a course
+  // حذف كورس باستخدام التفويض
+  if (courses) {
     courses.addEventListener("click", function (event) {
-        if (event.target.classList.contains("deleteCourse")) {
-            let courseElement = event.target.parentElement.parentElement;
-            courseElement.remove();
-        }
+      const btn = event.target.closest && event.target.closest(".deleteCourse");
+      if (btn) {
+        const courseElement = btn.closest(".course");
+        if (courseElement) courseElement.remove();
+      }
     });
+  }
 
-    // Event listener for calculating GPA
+  // زر الحساب
+  if (calculateGPAButton) {
     calculateGPAButton.addEventListener("click", function () {
-        updateSemesterGPA();
-        updateCumulativeGPA();
+      // افترض أن هاتين الدالتين موجودتان في كودك
+      if (typeof updateSemesterGPA === "function") updateSemesterGPA();
+      if (typeof updateCumulativeGPA === "function") updateCumulativeGPA();
     });
+  }
 });
-
-
-// Event delegation to remove courses dynamically
-courses.addEventListener("click", function (e) {
-    if (e.target && e.target.classList.contains("removeCourse")) {
-        let courseToRemove = e.target.closest(".course");
-        courseToRemove.remove();
-    }
-});
-
 
 
 
